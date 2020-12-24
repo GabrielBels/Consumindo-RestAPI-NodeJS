@@ -1,0 +1,75 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+button{
+    margin-top: 20px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#get{
+    min-width: 150px;
+    display: inline-block;
+    border: 1px black solid;
+    margin: 0 0 2px 0;
+    border-radius: 2px 2px 2px 2px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 1vh 1vh 6vh 6vh 6vh;
+    grid-template-areas:
+    "null alert"
+    "titulo titulo"
+    "fid id"
+    "fnome nome"
+    "fpreco preco";
+}
+
+input{
+    height: 25px;
+    width: 400px;
+    margin-left: 10px;
+}
+
+label{
+    margin-top: 5px;
+    text-align: right;
+}
+
+[for=id] {
+    grid-area: fid;
+}
+
+[for=nome] {
+    grid-area: fnome;
+}
+
+[for=preco] {
+    grid-area: fpreco;
+}
+
+#id{
+    grid-area: id;
+}
+
+#nome{
+    grid-area: nome;
+}
+
+#preco{
+    grid-area: preco;
+}
+
+#titulo{
+    grid-area: titulo;
+}
